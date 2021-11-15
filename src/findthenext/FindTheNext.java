@@ -1,7 +1,9 @@
 package findthenext;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
 /**
@@ -40,37 +42,40 @@ public class FindTheNext {
             int[] array = Arrays.stream(arrayInt).distinct().toArray();
             int arrayNum = array.length;
             Arrays.sort(array);
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
             for (int i = 0; i < qNum; i++) {
                 int x = Integer.parseInt(br.readLine());
                 int target = x+1;
                 if(target > array[arrayNum-1]){
-                    System.out.println(target);    
+                    bw.write(target + "\n");
                 }else if(target == array[arrayNum-1]){
-                    System.out.println(target+1);
+                    bw.write(target+1 + "\n");
                 }else if (target < array[0]){
-                    System.out.println(target);
+                    bw.write(target + "\n");
                 }else{
                     int res = getRes(array, target, 0, arrayNum - 1);
                     if(res == -1){
-                        System.out.println(target);
+                        bw.write(target + "\n");
                     }else{
                         target +=1;
                         boolean check = false;
                         for (int j = res+1; j < arrayNum; j++) {
                             if(target == array[j]){
                                 target +=1;
-                            }else if (target < array[j]){
-                                System.out.println(target);
+                            }else{
+                                bw.write(target + "\n");
                                 check = true;
                                 break;
                             }
                         }
                         if(check == false){
-                            System.out.println(target);
+                            bw.write(target + "\n");
                         }
                     }
                 }  
             }
+            bw.flush();
+            bw.close();
         }catch(Exception e){
             System.out.println("Error");
         }
