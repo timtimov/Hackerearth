@@ -68,14 +68,15 @@ public class ScoringinExam {
                 questions[i].setScore(Integer.parseInt(getScores[i]));
             }
             Arrays.sort(questions, new QuestionComp());
+            int[] results = new int[numQuest];
+            results[0] = questions[0].getTime();
+            for (int i = 1; i < numQuest; i++) {
+                results[i] = results[i-1] + questions[i].getTime();
+            }
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
             for (int i = 0; i < queries; i++) {
-                int num = Integer.parseInt(br.readLine());
-                int result = 0;
-                for (int j = 0; j < num; j++) {
-                    result += questions[j].getTime();
-                }
-                bw.write(result + "\n");
+                int num = Integer.parseInt(br.readLine());   
+                bw.write(results[num-1] + "\n");
             }
             bw.flush();
             bw.close();
