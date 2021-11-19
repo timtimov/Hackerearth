@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.Comparator;
 
 /**
@@ -12,7 +13,7 @@ import java.util.Comparator;
  */
 public class ScoringinExam {
     
-    class Question{
+    static class Question{
         
         private int score;
         private int time;
@@ -39,15 +40,15 @@ public class ScoringinExam {
         
     }
     
-    class QuestionComp implements Comparator<Question>{
+    static class QuestionComp implements Comparator<Question>{
         
         @Override
         public int compare(Question o1, Question o2) {
             if(o1.getScore()==o2.getScore()){
                 return o1.getTime() - o2.getTime();
-            }else{
-                return o1.getScore() - o2.getScore();
             }
+            return o2.getScore() - o1.getScore();
+            
         }
     }
     
@@ -57,8 +58,27 @@ public class ScoringinExam {
             String[] firstLine = br.readLine().split(" ");
             int numQuest = Integer.parseInt(firstLine[0]);
             int queries = Integer.parseInt(firstLine[1]);
-            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
-            
+            Question[] questions = new Question[numQuest];
+            String[] getTimes = br.readLine().split(" ");
+            for (int i = 0; i < numQuest; i++) {
+                questions[i] = new Question(Integer.parseInt(getTimes[i]));
+            }
+            String[] getScores = br.readLine().split(" ");
+            for (int i = 0; i < numQuest; i++) {
+                questions[i].setScore(Integer.parseInt(getScores[i]));
+            }
+            Arrays.sort(questions, new QuestionComp());
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+            for (int i = 0; i < queries; i++) {
+                int num = Integer.parseInt(br.readLine());
+                int result = 0;
+                for (int j = 0; j < num; j++) {
+                    result += questions[j].getTime();
+                }
+                bw.write(result + "\n");
+            }
+            bw.flush();
+            bw.close();
         }catch(Exception e){
             System.out.println("Error");
         }
