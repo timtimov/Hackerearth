@@ -17,9 +17,23 @@ public class ShilAndLuckyString {
             String str = br.readLine();
             char[] left = new char[len];
             char[] right = new char[len];
+            int aLeft = 0;
+            int aRight = 0;
+            int zLeft = 0;
+            int zRight = 0;
             for (int i = 0; i < len; i++) {
                 left[i] = str.charAt(i);
                 right[i] = str.charAt(i+len);
+                if(left[i] == 'a'){
+                    aLeft++;
+                }else if(left[i] == 'z'){
+                    zLeft++;
+                }
+                if(right[i] == 'a'){
+                    aRight++;
+                }else if(right[i] == 'z'){
+                    zRight++;
+                }
             }
             Arrays.sort(left);
             Arrays.sort(right);
@@ -63,10 +77,18 @@ public class ShilAndLuckyString {
                         }
                     }  
                 }
-                  
             }
-            int result = Math.max(big, Math.max(small,equal));
-            System.out.println(len - result);
+            big = len - big;
+            small = len - small;
+            equal = len - equal;
+            if(big - aLeft < zRight){
+                big += zRight - (big - aLeft);
+            }
+            if(small - zLeft < aRight){
+                small += aRight - (small - zLeft);
+            }
+            int result = Math.min(big, Math.min(small,equal));
+            System.out.println(result);
         }catch(Exception e){
             System.out.println("Error");
         }
