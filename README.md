@@ -4,4 +4,5 @@ Scoring in Exam https://www.hackerearth.com/practice/algorithms/sorting/merge-so
 One-Sized Game https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/one-sized-game/ \
 Number of overtakes https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/overtakes-count-33746e3a/ \
 Shil and Lucky String https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/shil-and-lucky-string-1/ \
-Missing Number https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/biggest-cake-possible-6d5915e7/
+Missing Number https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/biggest-cake-possible-6d5915e7/ \
+Benny and Gifts https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/benny-and-gifts-marcheasy-3/
