@@ -7,4 +7,4 @@ Shil and Lucky String https://www.hackerearth.com/practice/algorithms/sorting/me
 Missing Number https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/biggest-cake-possible-6d5915e7/ \
 Benny and Gifts https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/benny-and-gifts-marcheasy-3/ \
 Fredo and Sums https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/fredo-and-sums-1-605205cd/ \
-Prom Night https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/prom-night/ \
+Prom Night https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/prom-night/
