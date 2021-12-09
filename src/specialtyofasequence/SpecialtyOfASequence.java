@@ -10,19 +10,6 @@ import java.util.Arrays;
  */
 public class SpecialtyOfASequence {
     
-    static int[] findMin(int[] seq){
-        int min = Integer.MAX_VALUE;
-        int poss = 0;
-        for (int i = 0; i < seq.length; i++) {
-            if (seq[i] < min){
-                min = seq[i];
-                poss = i;
-            }
-        }
-        int[] res = {min, poss};
-        return res;
-    }
-    
     public static void main(String[] args) {
         try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
             String[] fLine = br.readLine().split(" ");
