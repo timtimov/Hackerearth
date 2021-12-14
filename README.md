@@ -9,4 +9,5 @@ Benny and Gifts https://www.hackerearth.com/practice/algorithms/sorting/quick-so
 Fredo and Sums https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/fredo-and-sums-1-605205cd/ \
 Prom Night https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/prom-night/ \
 Card game https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/card-game-1-44e9f4e7/ \
-Specialty of a sequence https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/lex-finds-beauty-0d0bc1b6/
+Specialty of a sequence https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/lex-finds-beauty-0d0bc1b6/ \
+Earth and The Meteorites https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/earthandthemeteorites-qualifier2/
