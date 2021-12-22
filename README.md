@@ -12,4 +12,5 @@ Card game https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/pra
 Specialty of a sequence https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/lex-finds-beauty-0d0bc1b6/ \
 Earth and The Meteorites https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/earthandthemeteorites-qualifier2/ \
 Pair Sums https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/pair-sums/ \
-Gotta catch 'em all! https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/gotta-catch-em-all/
+Gotta catch 'em all! https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/gotta-catch-em-all/ \
+Max Power https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/practice-problems/algorithm/increasing-subsequence-fbb63e3c/
